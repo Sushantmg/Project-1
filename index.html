@@ -16,12 +16,11 @@
     <header>
       <nav class="navbar1">
         <img id="logo" src="logo.png" alt="logo" />
-        <div id="account">MY ACCOUNT</div>
+       <a href="signin.html" id="account">MY ACCOUNT</a>
       </nav>
     </header>
     <main>
       <div class="navbar">
-        
         <div class="nav-links">
           <a href="hotel.html">HOTELS</a>
           <a href="cruises.html">CRUISES</a>
@@ -30,14 +29,12 @@
           <a href="tourpartner.html">TOUR PARTNERS</a>
         </div>
       </div>
-    
-      
+
       <div class="mobile-navbar">
         <h1>HOME</h1>
-        <img id="menuIcon" src="menugg.png" alt="Menu" class="menu-icon">
+        <img id="menuIcon" src="menugg.png" alt="Menu" class="menu-icon" />
       </div>
-    
-      
+
       <div id="mobileSidebar" class="sidebar">
         <div class="sidebar-header">
           <h2>Menu</h2>
@@ -51,37 +48,243 @@
           <a href="tourpartner.html">TOUR PARTNERS</a>
         </ul>
       </div>
-    
+
       <div id="overlay" class="overlay"></div>
 
       <div class="content">
-        <img src="travel.jpg" id="photo">
+        <img src="travel.jpg" id="photo" />
         <h1>TRAVEL SERVICE</h1>
-        <p>At Sushan Travels, we offer a wide range of travel services to make your journey smooth, 
-          memorable, and stress-free. Our agency provides both domestic and international tour packages 
-          tailored for individuals, couples, families, and groups. We handle flight ticket bookings at 
-          competitive rates and arrange comfortable hotel reservations to suit your budget and preferences. 
-          Our expert team also offers personalized travel itinerary planning to ensure you make the most of 
-          your time. For local convenience, we provide vehicle rental services including cars, jeeps, vans, 
-          and buses with or without drivers. Adventure seekers can enjoy our trekking, rafting, paragliding,
-           and jungle safari packages, while those seeking peace can explore our spiritual pilgrimage and 
-           cultural tour options. We assist with visa processing, travel insurance, and documentation to 
-           make your trip hassle-free. Additionally, we cater to corporate travel needs with efficient and
-            reliable business trip planning. With 24/7 customer support, 
-          Sushan Travels is dedicated to making every journey a joyful and unforgettable experience.</p>
-<img src="travel2.jpg" id="photo">
+        <p>
+          At Sushan Travels, we offer a wide range of travel services to make
+          your journey smooth, memorable, and stress-free. Our agency provides
+          both domestic and international tour packages tailored for
+          individuals, couples, families, and groups. We handle flight ticket
+          bookings at competitive rates and arrange comfortable hotel
+          reservations to suit your budget and preferences. Our expert team also
+          offers personalized travel itinerary planning to ensure you make the
+          most of your time. For local convenience, we provide vehicle rental
+          services including cars, jeeps, vans, and buses with or without
+          drivers. Adventure seekers can enjoy our trekking, rafting,
+          paragliding, and jungle safari packages, while those seeking peace can
+          explore our spiritual pilgrimage and cultural tour options. We assist
+          with visa processing, travel insurance, and documentation to make your
+          trip hassle-free. Additionally, we cater to corporate travel needs
+          with efficient and reliable business trip planning. With 24/7 customer
+          support, Sushan Travels is dedicated to making every journey a joyful
+          and unforgettable experience.
+        </p>
+        <img src="travel2.jpg" id="photo" />
+        <br><br>
+        <div class="nav">
+          <button class="tab-btn active" onclick="showForm('hotels')">HOTELS</button>
+          <button class="tab-btn" onclick="showForm('flights')">FLIGHTS</button>
+          <button class="tab-btn" onclick="showForm('cars')">CARS</button>
+          <button class="tab-btn" onclick="showForm('cruises')">CRUISES</button>
+        </div>
+      <br><br>
+        <div id="hotels" class="form-container active">
+          <h2>SUSHAN'S HOTEL SEARCH</h2>
+          <div class="form-grid">
+            <input type="text" placeholder="Enter Destination">
+            <input type="date" value="2025-04-15">
+            <input type="date" value="2025-04-17">
+            <select><option>1 Room</option></select>
+            <select><option>1 Adult</option></select>
+            <select><option>0 Children</option></select>
+            <button class="search-btn">SEARCH HOTELS</button>
+          </div>
+        </div>
+      
+        <div id="flights" class="form-container">
+          <h2>AAA Flight Search</h2>
+          <div class="form-grid">
+            <select><option>Round trip</option><option>One way</option></select>
+            <input type="text" placeholder="Enter Origin">
+            <input type="text" placeholder="Enter Destination">
+            <input type="date" value="2025-04-15">
+            <input type="date" value="2025-04-17">
+            <select><option>1 Adult</option></select>
+            <select><option>0 Children</option></select>
+            <select><option>All Classes of Service</option></select>
+            <button class="search-btn">SEARCH FLIGHTS</button>
+          </div>
+        </div>
+      
+        <div id="cars" class="form-container">
+          <h2>AAA Rental Car Search</h2>
+          <div class="form-grid">
+            <select><option>Same location</option><option>Different location</option></select>
+            <input type="text" placeholder="Pick up location">
+            <input type="date" value="2025-04-15">
+            <select><option>10:00 AM</option></select>
+            <input type="date" value="2025-04-17">
+            <select><option>10:00 AM</option></select>
+            <input type="text" placeholder="Hertz Gold Plus Rewards">
+            <input type="text" placeholder="Promo Coupon Number">
+            <input type="text" placeholder="Rate Code Number">
+            <button class="search-btn">SEARCH CARS</button>
+          </div>
+        </div>
+      
+        <div id="cruises" class="form-container">
+          <h2>AAA Cruise Search</h2>
+          <div class="form-grid">
+            <input type="text" placeholder="Departure Port">
+            <input type="text" placeholder="Destination">
+            <input type="date">
+            <select><option>1 Room</option></select>
+            <select><option>1 Adult</option></select>
+            <select><option>0 Children</option></select>
+            <button class="search-btn">SEARCH CRUISES</button>
+          </div>
+        </div>
+      
       </div>
-    <br><br>
-    
-    <a href="hotel.html">HOTELS</a>
-    <a href="cruises.html">FLIGHTS</a>
-    <a href="book.html">CRUISES</a>
-    <a href="vacation.html">CARS</a>
+      
+<div class="container2">
+  <img src="image3.webp" id="photo">
+  <h2 id="head">TRIP CANVAS®
+  </h2>
+  <p id="para">
+    "Are you seeking the ultimate vacation planning tool that will bring your travel 
+    dreams to life? Look no further than AAA Trip Canvas, where you can plan your dream getaway 
+    with ease. With a wide variety of travel inspiration at your fingertips, you can plan exciting
+     road trips, luxurious cruises and memorable vacations. From hand-picked hotels and restaurant 
+     suggestions to expert travel advice, you will find all the resources you need to ensure an 
+     unforgettable vacation experience.
+     With AAA Trip Canvas, your next adventure is just a few clicks away."
+  </p>
+  <a href="https://www.aaa.com/tripcanvas" id="promobtn">VISIT TRIP CANVAS</a>
+  
+
+
+  <img src="image4.webp" id="photo">
+  <h2 id="head">TOUR BOOK®</h2>
+  <p id="para">
+    "Ready to plan your next adventure? Look no further than the AAA TourBook®, your ultimate
+    travel guide. With just a few clicks, you will gain access to valuable information and expertise 
+    from the trusted source in travel, AAA. Browse through a hand-selected collection of AAA Diamond
+     designated hotels and restaurants, read expertly written articles on top travel destinations and
+      discover new experiences. 
+   Start planning your next journey today and let the TourBook® be your trusted guide along the way."
+  </p>
+  <a href="https://tourbook.aaa.com/" id="promobtn">VISIT TOURBOOK</a>
+   
+
+  <img src="image5.webp" id="photo">
+  <h2 id="head">TRIP TIK®</h2>
+  <p id="para">
+    "Looking for an easy way to plan your next road trip? AAA's TripTik® has got you covered! 
+    You can easily map out your route, get turn-by-turn directions and even find stops along 
+    the way for hotels, restaurants and attractions. And the best part? AAA's travel expertise 
+    means you'll have access to exclusive discounts and recommendations to ensure your trip is
+     the best it can be. Whether you're a seasoned road-tripper or a first-time explorer, TripTik® 
+     is the perfect tool to make your journey smooth and stress-free. 
+    Hit the road with confidence — start planning your next adventure!"
+  </p>
+  <a href="https://triptik.aaa.com/" id="promobtn">VIST TRIPTIK</a>
+</div>
+
+<div class="container3">
+  <img src="cruise.webp" id="photo">
+  <h2 id="head">
+    CRUISE PARTNERS
+  </h2>
+<p id="para">
+  "Looking for an incredible vacation experience on the water with amazing ports? Look no
+   further than AAA to book your next cruise. Our cruise partners are the best in the industry 
+   and offer affordable prices and exclusive benefits and savings. Whether you're looking for a 
+   relaxing voyage through the Caribbean or an adventure-filled Alaskan experience, AAA cruise partners 
+   have the perfect vacation for you.
+   Don't miss out on this opportunity to embark on the cruise vacation of a lifetime."
+</p>
+<img src="cruisepartner.jpg" id="photo">
+
+<img src="hotel.webp" id="photo">
+<h2 id="head">
+HOTEL PARTNERS
+</h2>
+<p id="para">
+  "AAA members get exclusive access to hotel discounts and AAA Hot Deals with AAA Preferred hotel
+   partners. You won't find rates like these anywhere else. Whether you're planning a family vacation
+    or a weekend getaway, AAA has you covered.
+   Don't wait — book your next hotel stay with one of our trusted partners and start saving today."
+</p>
+</div>
+
+<div class="slider-container">
+  <div class="slider" id="slider">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="sliderimg1.webp" alt="Best Western" />
+      <div class="content">
+        <span class="tag">Save 5% or more</span>
+        <h3>Best Western Hotels and Resorts</h3>
+        <p>Best Western offers Hot Deals exclusively for AAA/CAA members. Save 5% or more plus earn bonus points with the AAA Preferred™ BWR Program</p>
+        <button>Book Now</button>
+      </div>
     </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="sliderimg2.webp" alt="Hilton" />
+      <div class="content">
+        <span class="tag">Members save up to 10%</span>
+        <h3>Hilton</h3>
+        <p>Hilton offers Hot Deals exclusively for AAA/CAA members. Save up to 10% and earn more when booking AAA/CAA Rates.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
 
+  <!-- Navigation Dots -->
+  <div class="dots" id="dots"></div>
+</div>
 
+<img src="vacation.webp" id="photo">
+<h2 id="head">
+  VACATION PARTNERS
+</h2>
+<p id="para">
+  "If you are searching for a vacation that is tailored for your needs, book a AAA tour package. 
+  These vacations offer member benefits that cannot be found elsewhere. Our tour partners offer
+   the perfect vacation experiences for your choice of travel style. With guided tours, independent 
+   travel, and carefully selected destinations, you can trust that your vacation will be enjoyable 
+   and stress-free.
+   Don't wait any longer to plan your next trip — book today and start making memories!"
+</p>
+<img src="vacationpartner.jpg" id="photo">
     </main>
-    <footer></footer>
+    <footer>
+      <div id="foot">
+        <ul class="ul2">
+          <li>
+            <a class="aa">CONTACT US</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a class="aa">LOCATIONS</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a class="aa">CAREERS</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a class="aa">FOR THE MEDIA</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a class="aa">ABOUT TRAVELS</a>
+          </li>
+          <li class="divider">|</li>
+          <li>
+            <a class="aa">TERMS AND CONDITIONS</a>
+          </li>
+        </ul>
+
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
